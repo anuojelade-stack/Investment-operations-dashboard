@@ -1,0 +1,26 @@
+# Investment Operations Dashboard — gitignore
+
+# Environment variables — API keys must never enter git history
+.env
+
+# SQLite database — local data store, not part of the codebase
+*.db
+data/
+
+# Generated outputs — charts and reports are pipeline outputs,
+# not source code. Regenerated fresh on every pipeline run.
+outputs/charts/
+outputs/reports/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
